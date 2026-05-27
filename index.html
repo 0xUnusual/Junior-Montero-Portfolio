@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Cinematic Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle magnetic" aria-label="Toggle Theme">
+        <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41">
+            </path>
+        </svg>
+        <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+        </svg>
+    </button>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div id="preloader-logs"></div>
+        </div>
+        <!-- Left and right panels for sideways cinematic wipe -->
+        <div class="preloader-panel panel-left"></div>
+        <div class="preloader-panel panel-right"></div>
+    </div>
+
+    <!-- Main Wrapper for Horizontal Scroll -->
+    <div class="scroll-container">
+        <div class="horizontal-wrapper">
+
+            <!-- Section 1: Hero -->
+            <section class="section hero-section" id="hero">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <p class="hero-subtitle">PORTFOLIO INITIALIZED // V 2.0</p>
+                        <h1 class="hero-title">
+                            <span class="line">I BUILD</span>
+                            <span class="line typed-container"><span id="typed-element"></span></span>
+                        </h1>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image magnetic">
+                            <img src="Images/mi-avatar.png" alt="Junior Montero Avatar">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: About -->
+            <section class="section about-section" id="about">
+                <div class="about-content">
+                    <h2 class="section-title">01. ABOUT</h2>
+                    <p class="about-text">
+                        I'm Junior Montero, a Web Developer passionate about creating immersive, futuristic, and
+                        interactive web experiences. I transform ideas into premium interfaces using code, animation,
+                        and modern design.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 3: Projects -->
+            <section class="section projects-section" id="projects">
+                <h2 class="section-title horizontal-title">02. SELECTED WORK</h2>
+                <div class="projects-container">
+                    <a href="https://arq-website.vercel.app/" target="_blank" rel="noopener noreferrer"
+                        class="project-card magnetic">
+                        <div class="project-image-wrapper">
+                            <img class="project-image" src="Images/arquitecto (2).png" alt="Arq-Website">
+                        </div>
+                        <h3 class="project-title">ARQ-WEBSITE</h3>
+                        <p class="project-desc">Architecture Showcase Interface</p>
+                    </a>
+                    <a href="https://luciaaaa-beauty.vercel.app/" target="_blank" rel="noopener noreferrer"
+                        class="project-card magnetic">
+                        <div class="project-image-wrapper">
+                            <img class="project-image" src="Images/luciaaaa.png" alt="Luciaaaa-Beauty">
+                        </div>
+                        <h3 class="project-title">LUCIAAAA-BEAUTY</h3>
+                        <p class="project-desc">Beauty & Aesthetics Platform</p>
+                    </a>
+                    <a href="https://owens-burger.vercel.app/" target="_blank" rel="noopener noreferrer"
+                        class="project-card magnetic">
+                        <div class="project-image-wrapper">
+                            <img class="project-image" src="Images/owens.png" alt="owens-burger">
+                        </div>
+                        <h3 class="project-title">OWENS-BURGER</h3>
+                        <p class="project-desc">Premium Restaurant UX Concept</p>
+                    </a>
+                    <a href="https://https://kpinini-beer.vercel.app/" target="_blank" rel="noopener noreferrer"
+                        class="project-card magnetic">
+                        <div class="project-image-wrapper">
+                            <img class="project-image" src="Images/bottle-hero.png" alt="Kpinini-Beer">
+                        </div>
+                        <h3 class="project-title">KPININI-BEER</h3>
+                        <p class="project-desc">Craft Brewery Creative Layout</p>
+                    </a>
+                    <a href="https://mr-sandwich.vercel.app/" target="_blank" rel="noopener noreferrer"
+                        class="project-card magnetic">
+                        <div class="project-image-wrapper">
+                            <img class="project-image" src="Images/Mr.Sandwich.png" alt="Mr.Sandwich">
+                        </div>
+                        <h3 class="project-title">MR.SANDWICH</h3>
+                        <p class="project-desc">Gourmet Bistro Interface</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Section 4: Terminal -->
+            <section class="section terminal-section" id="terminal">
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="terminal-title">guest@portfolio:~</div>
+                    </div>
+                    <div class="terminal-body" id="interactive-terminal-body">
+                        <div class="terminal-log">System ready. Type 'help' to see available commands.</div>
+                        <div class="terminal-input-row">
+                            <span class="prompt">guest@portfolio:~$ </span>
+                            <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Skills & Contact -->
+            <section class="section end-section" id="contact">
+                <div class="end-content">
+                    <h2 class="section-title">SYSTEM.READY()</h2>
+                    <div class="contact-links">
+                        <a href="https://github.com/0xUnusual" target="_blank" rel="noopener noreferrer"
+                            class="magnetic">GITHUB</a>
+                        <a href="https://www.linkedin.com/in/junior-montero-b523b726a/" target="_blank"
+                            rel="noopener noreferrer" class="magnetic">LINKEDIN</a>
+                        <a href="mailto:juniormontero7@outlook.com" class="magnetic">EMAIL</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

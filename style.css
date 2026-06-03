@@ -133,6 +133,97 @@ body, html {
     transform: rotate(-90deg);
 }
 
+/* CV Download Button */
+.cv-download {
+    position: fixed;
+    top: 2rem;
+    right: 6rem;
+    height: 50px;
+    padding: 0 1.2rem;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 9999;
+    cursor: none !important;
+    transition: background 0.3s, border-color 0.3s, transform 0.2s, color 0.3s;
+    color: var(--text-color);
+    outline: none;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cv-download:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent-color);
+}
+
+.light-mode .cv-download {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .cv-download:hover {
+    background: rgba(0, 0, 0, 0.08);
+    border-color: var(--accent-color);
+}
+
+.cv-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.cv-download:hover .cv-icon {
+    transform: translateY(2px);
+}
+
+/* Language Toggle Button */
+.lang-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 12rem;
+    height: 50px;
+    padding: 0 1.2rem;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: none !important;
+    transition: background 0.3s, border-color 0.3s, transform 0.2s, color 0.3s;
+    color: var(--text-color);
+    outline: none;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.lang-toggle:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent-color);
+}
+
+.light-mode .lang-toggle {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .lang-toggle:hover {
+    background: rgba(0, 0, 0, 0.08);
+    border-color: var(--accent-color);
+}
+
 /* Preloader */
 .preloader {
     position: fixed;
@@ -214,10 +305,11 @@ body, html {
 
 .section-title {
     font-family: var(--font-heading);
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 5.5vh, 4rem);
     font-weight: 700;
     margin-bottom: 2rem;
     letter-spacing: -2px;
+    white-space: nowrap;
 }
 
 /* Hero Section */
@@ -258,7 +350,7 @@ body, html {
 
 /* About Section */
 .about-text {
-    font-size: 3rem;
+    font-size: clamp(1.6rem, 4vh, 3rem);
     line-height: 1.4;
     max-width: 900px;
     font-weight: 300;
@@ -330,6 +422,7 @@ body, html {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    line-height: 1.4;
 }
 
 /* Terminal Section */
@@ -560,3 +653,296 @@ body, html {
         height: 250px;
     }
 }
+
+/* Custom Cursor Touch Reset */
+@media (hover: none), (max-width: 1023px) {
+    .cursor, .cursor-follower {
+        display: none !important;
+    }
+    * {
+        cursor: auto !important;
+    }
+}
+
+/* Responsive Overrides for Tablet and Mobile (Portrait / Landscape Stacking) */
+@media (max-width: 1023px) {
+    .scroll-container {
+        height: auto;
+        overflow: visible;
+        position: relative;
+    }
+
+    .horizontal-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .section {
+        width: 100vw;
+        height: auto;
+        min-height: 100vh;
+        flex-shrink: 1;
+        padding: 80px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-section {
+        align-items: center;
+        padding-top: 120px;
+    }
+
+    .about-section {
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        letter-spacing: -1px;
+        margin-bottom: 2rem;
+    }
+
+    .about-text {
+        font-size: 2rem;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+
+    /* Projects Section Layout */
+    .projects-section {
+        width: 100%;
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .horizontal-title {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 3rem;
+        width: 100%;
+        text-align: left;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .project-image-wrapper {
+        height: 350px;
+    }
+
+    .project-title {
+        font-size: 2rem;
+    }
+
+    /* Terminal Section */
+    .terminal-section {
+        padding: 80px 24px;
+    }
+
+    .terminal-container {
+        width: 100%;
+        max-width: 700px;
+        height: 450px;
+    }
+
+    .terminal-body {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    #terminal-input {
+        font-size: 1rem;
+    }
+
+    /* CV and Theme Toggle Buttons Positioning */
+    .cv-download {
+        top: 1.5rem;
+        right: 5.5rem;
+        height: 44px;
+        padding: 0 1rem;
+        font-size: 0.75rem;
+    }
+
+    .theme-toggle {
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 44px;
+        height: 44px;
+    }
+
+    .lang-toggle {
+        top: 1.5rem;
+        right: 9.5rem;
+        height: 44px;
+        padding: 0 1rem;
+        font-size: 0.75rem;
+    }
+
+    /* Contact Section Links */
+    .contact-links {
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .contact-links a {
+        font-size: 2rem;
+    }
+}
+
+/* Specific Mobile Optimization Breakpoint */
+@media (max-width: 576px) {
+    .section {
+        padding: 80px 20px;
+    }
+
+    .hero-section {
+        padding-top: 100px;
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 8vw, 3.5rem);
+    }
+
+    .hero-container {
+        gap: 2rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    .horizontal-title {
+        margin-bottom: 2rem;
+    }
+
+    .projects-container {
+        gap: 3rem;
+    }
+
+    .project-image-wrapper {
+        height: 260px;
+    }
+
+    .project-title {
+        font-size: 1.6rem;
+    }
+
+    .terminal-section {
+        padding: 60px 16px;
+    }
+
+    .terminal-container {
+        height: 380px;
+    }
+
+    .terminal-body {
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+
+    #terminal-input {
+        font-size: 0.85rem;
+    }
+
+    .contact-links {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .contact-links a {
+        font-size: 1.6rem;
+    }
+}
+
+/* Responsive adjustments for height-constrained desktop viewports (e.g., 16" laptops) */
+@media (min-width: 1024px) and (max-height: 900px) {
+    .hero-image {
+        height: 320px;
+    }
+    .about-text {
+        font-size: 2.2rem;
+    }
+    .horizontal-title {
+        top: 6vh;
+    }
+    .projects-container {
+        margin-top: 12vh;
+        gap: 3.5rem;
+    }
+    .project-card {
+        width: 350px;
+        gap: 1rem;
+    }
+    .project-image-wrapper {
+        height: 42vh;
+        min-height: 320px;
+    }
+    .project-title {
+        font-size: 1.8rem;
+    }
+    .project-desc {
+        font-size: 0.85rem;
+    }
+    .terminal-container {
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1024px) and (max-height: 750px) {
+    .hero-image {
+        height: 280px;
+    }
+    .about-text {
+        font-size: 1.8rem;
+    }
+    .horizontal-title {
+        top: 5vh;
+    }
+    .projects-container {
+        margin-top: 10vh;
+        gap: 2.5rem;
+    }
+    .project-card {
+        width: 300px;
+        gap: 0.8rem;
+    }
+    .project-image-wrapper {
+        height: 38vh;
+        min-height: 260px;
+    }
+    .project-title {
+        font-size: 1.6rem;
+    }
+    .terminal-container {
+        width: 650px;
+        height: 350px;
+    }
+}
+

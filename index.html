@@ -21,6 +21,21 @@
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
+    <!-- Language Toggle Button -->
+    <button id="lang-toggle" class="lang-toggle magnetic" aria-label="Toggle Language">
+        <span class="lang-text">ES</span>
+    </button>
+
+    <!-- CV Download Button -->
+    <a href="Cv/Maximo Montero CV .pdf" download="Maximo Montero CV .pdf" id="cv-download" class="cv-download magnetic" aria-label="Download CV">
+        <span class="cv-text" data-i18n="cv_text">CV</span>
+        <svg class="cv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+    </a>
+
     <!-- Theme Toggle Button -->
     <button id="theme-toggle" class="theme-toggle magnetic" aria-label="Toggle Theme">
         <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -54,9 +69,9 @@
             <section class="section hero-section" id="hero">
                 <div class="hero-container">
                     <div class="hero-content">
-                        <p class="hero-subtitle">PORTFOLIO INITIALIZED // V 2.0</p>
+                        <p class="hero-subtitle" data-i18n="hero_subtitle">PORTFOLIO INITIALIZED // V 2.0</p>
                         <h1 class="hero-title">
-                            <span class="line">I BUILD</span>
+                            <span class="line" data-i18n="hero_title_1">I BUILD</span>
                             <span class="line typed-container"><span id="typed-element"></span></span>
                         </h1>
                     </div>
@@ -71,8 +86,8 @@
             <!-- Section 2: About -->
             <section class="section about-section" id="about">
                 <div class="about-content">
-                    <h2 class="section-title">01. ABOUT</h2>
-                    <p class="about-text">
+                    <h2 class="section-title" data-i18n="about_title">01. ABOUT</h2>
+                    <p class="about-text" data-i18n="about_text">
                         I'm Junior Montero, a Web Developer passionate about creating immersive, futuristic, and
                         interactive web experiences. I transform ideas into premium interfaces using code, animation,
                         and modern design.
@@ -82,7 +97,7 @@
 
             <!-- Section 3: Projects -->
             <section class="section projects-section" id="projects">
-                <h2 class="section-title horizontal-title">02. SELECTED WORK</h2>
+                <h2 class="section-title horizontal-title" data-i18n="projects_title">02. SELECTED WORK</h2>
                 <div class="projects-container">
                     <a href="https://arq-website.vercel.app/" target="_blank" rel="noopener noreferrer"
                         class="project-card magnetic">
@@ -90,7 +105,7 @@
                             <img class="project-image" src="Images/arquitecto (2).png" alt="Arq-Website">
                         </div>
                         <h3 class="project-title">ARQ-WEBSITE</h3>
-                        <p class="project-desc">Architecture Showcase Interface</p>
+                        <p class="project-desc" data-i18n="project_desc_1">Architecture Showcase Interface</p>
                     </a>
                     <a href="https://luciaaaa-beauty.vercel.app/" target="_blank" rel="noopener noreferrer"
                         class="project-card magnetic">
@@ -98,7 +113,7 @@
                             <img class="project-image" src="Images/luciaaaa.png" alt="Luciaaaa-Beauty">
                         </div>
                         <h3 class="project-title">LUCIAAAA-BEAUTY</h3>
-                        <p class="project-desc">Beauty & Aesthetics Platform</p>
+                        <p class="project-desc" data-i18n="project_desc_2">Beauty & Aesthetics Platform</p>
                     </a>
                     <a href="https://owens-burger.vercel.app/" target="_blank" rel="noopener noreferrer"
                         class="project-card magnetic">
@@ -106,7 +121,7 @@
                             <img class="project-image" src="Images/owens.png" alt="owens-burger">
                         </div>
                         <h3 class="project-title">OWENS-BURGER</h3>
-                        <p class="project-desc">Premium Restaurant UX Concept</p>
+                        <p class="project-desc" data-i18n="project_desc_3">Premium Restaurant UX Concept</p>
                     </a>
                     <a href="https://https://kpinini-beer.vercel.app/" target="_blank" rel="noopener noreferrer"
                         class="project-card magnetic">
@@ -114,7 +129,7 @@
                             <img class="project-image" src="Images/bottle-hero.png" alt="Kpinini-Beer">
                         </div>
                         <h3 class="project-title">KPININI-BEER</h3>
-                        <p class="project-desc">Craft Brewery Creative Layout</p>
+                        <p class="project-desc" data-i18n="project_desc_4">Craft Brewery Creative Layout</p>
                     </a>
                     <a href="https://mr-sandwich.vercel.app/" target="_blank" rel="noopener noreferrer"
                         class="project-card magnetic">
@@ -122,7 +137,7 @@
                             <img class="project-image" src="Images/Mr.Sandwich.png" alt="Mr.Sandwich">
                         </div>
                         <h3 class="project-title">MR.SANDWICH</h3>
-                        <p class="project-desc">Gourmet Bistro Interface</p>
+                        <p class="project-desc" data-i18n="project_desc_5">Gourmet Bistro Interface</p>
                     </a>
                 </div>
             </section>
@@ -137,7 +152,7 @@
                         <div class="terminal-title">guest@portfolio:~</div>
                     </div>
                     <div class="terminal-body" id="interactive-terminal-body">
-                        <div class="terminal-log">System ready. Type 'help' to see available commands.</div>
+                        <div class="terminal-log" data-i18n="terminal_ready">System ready. Type 'help' to see available commands.</div>
                         <div class="terminal-input-row">
                             <span class="prompt">guest@portfolio:~$ </span>
                             <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
@@ -149,7 +164,7 @@
             <!-- Section 5: Skills & Contact -->
             <section class="section end-section" id="contact">
                 <div class="end-content">
-                    <h2 class="section-title">SYSTEM.READY()</h2>
+                    <h2 class="section-title" data-i18n="contact_title">SYSTEM.READY()</h2>
                     <div class="contact-links">
                         <a href="https://github.com/0xUnusual" target="_blank" rel="noopener noreferrer"
                             class="magnetic">GITHUB</a>

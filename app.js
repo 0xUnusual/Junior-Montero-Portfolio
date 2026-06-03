@@ -397,6 +397,37 @@ function initScrollAnimations() {
                 });
             }
         });
+
+        // Hide toggle buttons on mobile scroll down, show on scroll up
+        let lastScrollY = window.scrollY;
+        const langBtn = document.getElementById('lang-toggle');
+        const cvBtn = document.getElementById('cv-download');
+        const themeBtn = document.getElementById('theme-toggle');
+
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > 50 && currentScrollY > lastScrollY) {
+                // Scrolling down - hide buttons
+                langBtn?.classList.add('nav-hidden');
+                cvBtn?.classList.add('nav-hidden');
+                themeBtn?.classList.add('nav-hidden');
+            } else {
+                // Scrolling up or near top - show buttons
+                langBtn?.classList.remove('nav-hidden');
+                cvBtn?.classList.remove('nav-hidden');
+                themeBtn?.classList.remove('nav-hidden');
+            }
+            lastScrollY = currentScrollY;
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            langBtn?.classList.remove('nav-hidden');
+            cvBtn?.classList.remove('nav-hidden');
+            themeBtn?.classList.remove('nav-hidden');
+        };
     });
 }
 

@@ -780,6 +780,7 @@ body, html {
         height: 44px;
         padding: 0 1rem;
         font-size: 0.75rem;
+        transition: background 0.3s, border-color 0.3s, transform 0.3s, opacity 0.3s, color 0.3s;
     }
 
     .theme-toggle {
@@ -787,14 +788,24 @@ body, html {
         right: 1.5rem;
         width: 44px;
         height: 44px;
+        transition: background 0.3s, border-color 0.3s, transform 0.3s, opacity 0.3s, color 0.3s;
     }
 
     .lang-toggle {
         top: 1.5rem;
-        right: 9.5rem;
+        right: 11.5rem;
         height: 44px;
         padding: 0 1rem;
         font-size: 0.75rem;
+        transition: background 0.3s, border-color 0.3s, transform 0.3s, opacity 0.3s, color 0.3s;
+    }
+
+    .theme-toggle.nav-hidden,
+    .cv-download.nav-hidden,
+    .lang-toggle.nav-hidden {
+        transform: translateY(-80px) !important;
+        opacity: 0;
+        pointer-events: none;
     }
 
     /* Contact Section Links */

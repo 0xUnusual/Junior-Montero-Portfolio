@@ -49,14 +49,14 @@ const terminalTranslations = {
         about: "Junior Creative Developer.\nSpecializing in high-performance web experiences.\nLocation: Santo Domingo, Dominican Republic\nStatus: Available for projects.",
         skills: "HTML5, CSS3, Vanilla JS, GSAP, WebGL, Three.js, React, Node.js\nFocus: Performance, Motion Design, Awwwards-level execution.",
         projects: "Loading Junior's database...\n[1] Arq-Website - Architecture Showcase\n[2] Luciaaaa-Beauty - Beauty & Aesthetics Platform\n[3] owens-burger - Premium Restaurant UX\n[4] Kpinini-Beer - Craft Brewery Creative Site\n[5] Mr.Sandwich - Gourmet Bistro Landing\nScroll right to see the live showcases.",
-        contact: "Email: juniormontero7@outlook.com\nGitHub: https://github.com/0xUnusual\nLinkedIn: https://www.linkedin.com/in/junior-montero-b523b726a/"
+        contact: "Email: juniormontero7@outlook.com\nGitHub: https://github.com/0xUnusual\nLinkedIn: https://www.linkedin.com/in/maximo-junior-montero-mercedes-020956373/"
     },
     es: {
         help: "Comandos disponibles:\nabout      - Mostrar información\nskills     - Listar habilidades técnicas\nprojects   - Ver trabajos seleccionados\ncontact    - Mostrar info de contacto\nclear      - Limpiar salida de terminal",
         about: "Junior Desarrollador Creativo.\nEspecializado en experiencias web de alto rendimiento.\nUbicación: Santo Domingo, República Dominicana\nEstado: Disponible para proyectos.",
         skills: "HTML5, CSS3, Vanilla JS, GSAP, WebGL, Three.js, React, Node.js\nEnfoque: Rendimiento, Diseño de Movimiento, ejecución al nivel de Awwwards.",
         projects: "Cargando base de datos de Junior...\n[1] Arq-Website - Exhibición de Arquitectura\n[2] Luciaaaa-Beauty - Plataforma de Estética y Belleza\n[3] owens-burger - UX de Restaurante Premium\n[4] Kpinini-Beer - Sitio Creativo de Cervecería Artesanal\n[5] Mr.Sandwich - Landing de Bistro Gourmet\nDesplázate a la derecha para ver los proyectos en vivo.",
-        contact: "Email: juniormontero7@outlook.com\nGitHub: https://github.com/0xUnusual\nLinkedIn: https://www.linkedin.com/in/junior-montero-b523b726a/"
+        contact: "Email: juniormontero7@outlook.com\nGitHub: https://github.com/0xUnusual\nLinkedIn: https://www.linkedin.com/in/maximo-junior-montero-mercedes-020956373/"
     }
 };
 
@@ -210,8 +210,8 @@ if (terminalContainer && terminalInput) {
             responseLine.style.whiteSpace = 'pre-line';
             terminalBody.insertBefore(responseLine, terminalInput.parentElement);
 
-            const response = terminalTranslations[currentLang][value] || 
-                (currentLang === 'es' 
+            const response = terminalTranslations[currentLang][value] ||
+                (currentLang === 'es'
                     ? `Comando no encontrado: ${value}. Escribe 'help' para ver la lista de comandos.`
                     : `Command not found: ${value}. Type 'help' for a list of commands.`);
 

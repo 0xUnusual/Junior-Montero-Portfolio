@@ -108,6 +108,11 @@ function initThemeToggle() {
         const isLight = document.documentElement.classList.toggle('light-mode');
         localStorage.setItem('theme', isLight ? 'light' : 'dark');
 
+        // Update Antigravity background theme colors
+        if (window.__antigravityBgInstance) {
+            window.__antigravityBgInstance.setTheme(!isLight);
+        }
+
         // Micro-animation for toggle scale
         gsap.fromTo(toggleBtn,
             { scale: 0.8 },

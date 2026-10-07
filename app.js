@@ -20,9 +20,9 @@ const translations = {
         projects_title: "02. SELECTED WORK",
         project_desc_1: "Architecture Showcase Interface",
         project_desc_2: "Beauty & Aesthetics Platform",
-        project_desc_3: "Premium Restaurant UX Concept",
+        project_desc_3: "Luxury Leather & High Craftsmanship",
         project_desc_4: "Craft Brewery Creative Layout",
-        project_desc_5: "Gourmet Bistro Interface",
+        project_desc_5: "Botanical & Organic E-Commerce",
         terminal_ready: "System ready. Type 'help' to see available commands.",
         contact_title: "SYSTEM.READY()"
     },
@@ -35,9 +35,9 @@ const translations = {
         projects_title: "02. TRABAJOS SELECCIONADOS",
         project_desc_1: "Interfaz de Exhibición de Arquitectura",
         project_desc_2: "Plataforma de Estética y Belleza",
-        project_desc_3: "Concepto UX de Restaurante Premium",
+        project_desc_3: "Bolsos de Lujo y Alta Artesanía",
         project_desc_4: "Diseño Creativo de Cervecería Artesanal",
-        project_desc_5: "Interfaz de Bistro Gourmet",
+        project_desc_5: "E-Commerce Botánico y Orgánico",
         terminal_ready: "Sistema listo. Escribe 'help' para ver los comandos disponibles.",
         contact_title: "SISTEMA.LISTO()"
     }
@@ -48,14 +48,14 @@ const terminalTranslations = {
         help: "Available commands:\nabout      - Display information\nskills     - List technical skills\nprojects   - View selected works\ncontact    - Display contact info\nclear      - Clear terminal output",
         about: "Junior Web Developer.\nSpecializing in high-performance web experiences.\nLocation: Santo Domingo Este, Dominican Republic\nStatus: Available for projects.",
         skills: "HTML5, CSS3, Vanilla JS, GSAP, WebGL, Responsive Design, React, UI Design, UX Design, Tailwind CSS\nFocus: Performance, Motion Design, Awwwards-level execution.",
-        projects: "Loading Junior's database...\n[1] Arq-Website - Architecture Showcase\n[2] Luciaaaa-Beauty - Beauty & Aesthetics Platform\n[3] owens-burger - Premium Restaurant UX\n[4] Kpinini-Beer - Craft Brewery Creative Site\n[5] Mr.Sandwich - Gourmet Bistro Landing\nScroll right to see the live showcases.",
+        projects: "Loading Junior's database...\n[1] Arq-Website - Architecture Showcase\n[2] Luciaaaa-Beauty - Beauty & Aesthetics Platform\n[3] Merced - Luxury Leather & High Craftsmanship\n[4] Kpinini-Beer - Craft Brewery Creative Site\n[5] Organic-Shop-RD - Botanical & Organic E-Commerce\nScroll right to see the live showcases.",
         contact: "Email: juniormontero7@outlook.com\nGitHub: https://github.com/0xUnusual\nLinkedIn: https://www.linkedin.com/in/juniormonterodev/"
     },
     es: {
         help: "Comandos disponibles:\nabout      - Mostrar información\nskills     - Listar habilidades técnicas\nprojects   - Ver trabajos seleccionados\ncontact    - Mostrar info de contacto\nclear      - Limpiar salida de terminal",
         about: "Junior Desarrollador Web.\nEspecializado en experiencias web de alto rendimiento.\nUbicación: Santo Domingo Este, República Dominicana\nEstado: Disponible para proyectos.",
         skills: "HTML5, CSS3, Vanilla JS, GSAP, WebGL, Responsive Design, React, UI Design, UX Design, Tailwind CSS\nEnfoque: Rendimiento, Diseño de Movimiento, ejecución al nivel de Awwwards.",
-        projects: "Cargando base de datos de Junior...\n[1] Arq-Website - Exhibición de Arquitectura\n[2] Luciaaaa-Beauty - Plataforma de Estética y Belleza\n[3] owens-burger - UX de Restaurante Premium\n[4] Kpinini-Beer - Sitio Creativo de Cervecería Artesanal\n[5] Mr.Sandwich - Landing de Bistro Gourmet\nDesplázate a la derecha para ver los proyectos en vivo.",
+        projects: "Cargando base de datos de Junior...\n[1] Arq-Website - Exhibición de Arquitectura\n[2] Luciaaaa-Beauty - Plataforma de Estética y Belleza\n[3] Merced - Bolsos de Lujo y Alta Artesanía\n[4] Kpinini-Beer - Sitio Creativo de Cervecería Artesanal\n[5] Organic-Shop-RD - E-Commerce Botánico y Orgánico\nDesplázate a la derecha para ver los proyectos en vivo.",
         contact: "Email: juniormontero7@outlook.com\nGitHub: https://github.com/0xUnusual\nLinkedIn: https://www.linkedin.com/in/juniormonterodev/"
     }
 };

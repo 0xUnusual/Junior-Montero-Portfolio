@@ -34,9 +34,9 @@ Este es mi portafolio web personal e interactivo de alto rendimiento. Ha sido co
 *   Acceso e integración directa a mis 5 mejores repositorios reales de GitHub:
     *   **ARQ-WEBSITE**: Plataforma interactiva de arquitectura.
     *   **LUCIAAAA-BEAUTY**: Interfaz estética y de belleza.
-    *   **OWENS-BURGER**: UX concept de menú gastronómico premium.
+    *   **MERCED**: Plataforma de bolsos de lujo y alta artesanía dominicana.
     *   **KPININI-BEER**: Maquetación web de cervecería artesanal.
-    *   **MR.SANDWICH**: Landing page para bistro gourmet.
+    *   **ORGANIC-SHOP-RD**: E-commerce de productos naturales y botánicos certificados.
 *   Tarjetas magnéticas interactivas que redirigen a sus respectivas aplicaciones de producción o repositorios.
 
 ### 5. Terminal de Comandos Interactiva (guest@portfolio)
@@ -61,9 +61,9 @@ Portfolio/
     ├── mi-avatar.png
     ├── arquitecto (2).png
     ├── luciaaaa.png
-    ├── owens.png
+    ├── merced.png
     ├── bottle-hero.png
-    └── Mr.Sandwich.png
+    └── organic-shop.jpg
 ```
 
 ---
